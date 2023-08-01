@@ -13,7 +13,7 @@ import MotionLazy from 'src/components/animate/motion-lazy';
 export const metadata = {
   title: 'RCA Capital',
   description:
-    'The ZONE is built on top of MUI, a powerful library that provides flexible, customizable, and easy-to-use components.',
+    'Descripción de RCA Capital pendiente',
   keywords: 'trading,learning,academy,profit,exchange,admin,capital,invest',
   themeColor: '#000000',
   manifest: '/manifest.json',

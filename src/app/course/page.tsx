@@ -3,7 +3,7 @@ import ElearningCourseView from 'src/sections/_elearning/view/elearning-course-v
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Design Masterclass Course',
+  title: 'Cursos ofrecidos por RCA Capital',
 };
 
 export default function ElearningCoursePage() {
