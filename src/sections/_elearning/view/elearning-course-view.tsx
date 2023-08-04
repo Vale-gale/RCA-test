@@ -18,10 +18,12 @@ import { SplashScreen } from 'src/components/loading-screen';
 
 import Advertisement from '../../advertisement';
 import ElearningNewsletter from '../elearning-newsletter';
+import ReviewElearning from '../../review/elearning/review-elearning';
 import ElearningCourseListSimilar from '../list/elearning-course-list-similar';
 import ElearningCourseDetailsHero from '../details/elearning-course-details-hero';
 import ElearningCourseDetailsInfo from '../details/elearning-course-details-info';
 import ElearningCourseDetailsSummary from '../details/elearning-course-details-summary';
+import ElearningCourseDetailsTeachersInfo from '../details/elearning-course-details-teachers-info';
 
 // ----------------------------------------------------------------------
 
@@ -69,7 +71,7 @@ export default function ElearningCourseView() {
 
             <Stack direction="row" flexWrap="wrap" sx={{ mt: 5 }}>
               <Typography variant="subtitle2" sx={{ mt: 0.75, mr: 1.5 }}>
-                Compartir:
+                Share:
               </Typography>
 
               <Stack direction="row" alignItems="center" flexWrap="wrap">
@@ -97,7 +99,8 @@ export default function ElearningCourseView() {
             </Stack>
 
             <Divider sx={{ my: 5 }} />
-          
+
+            <ElearningCourseDetailsTeachersInfo teachers={_mockCourse.teachers} />
           </Grid>
 
           <Grid xs={12} md={5} lg={4}>
@@ -106,7 +109,7 @@ export default function ElearningCourseView() {
 
               <Advertisement
                 advertisement={{
-                  title: 'Anuncio',
+                  title: 'Advertisement',
                   description: 'Duis leo. Donec orci lectus, aliquam ut, faucibus non',
                   imageUrl: _mock.image.course(7),
                   path: '',
@@ -116,6 +119,11 @@ export default function ElearningCourseView() {
           </Grid>
         </Grid>
       </Container>
+
+      {mdUp && <Divider />}
+
+      <ReviewElearning />
+
       <ElearningCourseListSimilar courses={courseSimilar} />
 
       <ElearningNewsletter />

@@ -38,6 +38,7 @@ export default function ElearningLandingHero() {
 
   return (
     <>
+
       <Box
         sx={{
           ...bgGradient({
@@ -49,57 +50,59 @@ export default function ElearningLandingHero() {
       >
         <Container
           sx={{
-            py: 15,
+            py: 8,
             display: { md: 'flex' },
             alignItems: { md: 'center' },
-            height: { md: `100vh` },
+            height: { md: `75vh` },
           }}
         >
-          <Grid container spacing={3}>
-            <Grid xs={12} md={6} lg={5}>
-              <Stack
-                sx={{
-                  textAlign: { xs: 'center', md: 'unset' },
-                  paddingTop: 12
-                }}
-              >
-                <Typography variant="h1">
+
+            <Stack
+  sx={{
+    textAlign: 'center', // Centrar el texto en dispositivos pequeños y medianos
+    [theme.breakpoints.up('md')]: {
+      textAlign: 'center', // Restaurar la alineación normal en dispositivos grandes
+    },
+    paddingTop: 7,
+  }}
+>
+                <Typography variant="h2">
                   
-                  <Box component="span" sx={{ color: 'text.disabled' }}>
-                    {` RCA Capital `}
+                   <Box component="span" sx={{ color: 'primary.main' }}>
+                    {` Tecnología `}
                   </Box>
-                  <Link href="/courses">
-                  <Box component="span" sx={{ color: 'primary.main', textDecoration: 'underline' }}>
-                    {` Cursos `}
+                  que
+                  <Box component="span" sx={{ textDecoration: ' underline dotted grey' }}>
+                    {` genera riqueza`}
                   </Box>
-                  </Link>
-                   con expertos
                 </Typography>
+                {/* <ElearningHeroIllustration /> */}
+
+
 
                 <Typography sx={{ color: 'text.secondary', mt: 3, mb: 5 }}>
-                  Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis
-                  venenatis ante odio sit amet eros.
+                Somos una empresa de Fintech que diseña, valida y aplica soluciones financieras para construir portafolios ganadores y estrategias rentables en los mercados financieros.
                 </Typography>
-                <Stack spacing={3} alignItems="center" direction={{ xs: 'column', md: 'row' }}>
-                  <Link href="/auth/login">
-                  <Button color="inherit" size="large" variant="contained">
-                    Comenzar ahora
-                  </Button>
-                  </Link>
-                  <Stack direction="row" alignItems="center" sx={{ typography: 'h6' }}>
-                    <Fab size="medium" color="info" onClick={videoOpen.onTrue} sx={{ mr: 1 }}>
-                      <Iconify width={24} icon="carbon:play" />
-                    </Fab>
-                    Video explicación
-                  </Stack>
-                </Stack>
+                <Stack
+  direction="row"
+  justifyContent="center" // Centrar horizontalmente en todos los dispositivos
+  alignItems="center"
+  sx={{ typography: 'h6', mt: 2 }} // Añadir margen superior para separar del subtítulo
+>
+  <Fab size="medium" color="info" onClick={videoOpen.onTrue} sx={{ mr: 1 }}>
+    <Iconify width={24} icon="carbon:play" />
+  </Fab>
+  Video explicación
+</Stack>
+
 
                 <Divider sx={{ borderStyle: 'dashed', mt: 8, mb: 6 }} />
 
                 <Stack
-                  direction="row"
-                  spacing={{ xs: 3, sm: 10 }}
-                  justifyContent={{ xs: 'center', md: 'unset' }}
+      direction="row"
+      spacing={{ xs: 3, sm: 10 }}
+      justifyContent="center" // Centrado horizontal
+      sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}
                 >
                   {SUMMARY.map((item) => (
                     <Stack key={item.value} spacing={0.5} sx={{ position: 'relative' }}>
@@ -123,14 +126,10 @@ export default function ElearningLandingHero() {
                   ))}
                 </Stack>
               </Stack>
-            </Grid>
 
-            {mdUp && (
-              <Grid xs={12} md={6} lg={7}>
-                <ElearningHeroIllustration />
-              </Grid>
-            )}
-          </Grid>
+
+
+
         </Container>
       </Box>
 

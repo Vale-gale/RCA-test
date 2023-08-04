@@ -57,27 +57,27 @@ function ElearningHeroIllustration({ sx, ...other }: BoxProps) {
   return (
     <Box
       sx={{
-        width: 670,
-        height: 670,
+        top: 50,
+        right: 250,
         display: 'flex',
         alignItems: 'center',
-        position: 'relative',
+        position: 'absolute',
         justifyContent: 'center',
         ...sx,
       }}
       {...other}
     >
-      <Box sx={{ position: 'absolute', right: 1, bottom: 18, zIndex: 8 }}>
+     <Box sx={{ position: 'absolute', right: 30, bottom: 150, zIndex: 8, borderRadius: 10 }}>
         <Image
           visibleByDefault
           disabledEffect
           alt="teacher"
-          src="/assets/images/course/course_teacher_hero.png"
-          sx={{ width: 496, height: 600 }}
+          src="/assets/images/course/course_teacher_hero.jpg"
+          sx={{ width: 420, height: 250 }}
         />
-      </Box>
+      </Box> 
 
-      <Box
+      {/* <Box
         {...varDown}
         component={m.div}
         sx={{ position: 'absolute', left: 115, bottom: 115, zIndex: 8 }}
@@ -89,9 +89,9 @@ function ElearningHeroIllustration({ sx, ...other }: BoxProps) {
           src="/assets/icons/ic_book.png"
           sx={{ width: 52, height: 62 }}
         />
-      </Box>
+      </Box> */}
 
-      <Box
+      {/* <Box
         {...varRight}
         component={m.div}
         sx={{ position: 'absolute', left: 18, top: 220, zIndex: 8 }}
@@ -103,9 +103,9 @@ function ElearningHeroIllustration({ sx, ...other }: BoxProps) {
           src="/assets/icons/ic_pencil.png"
           sx={{ width: 60, height: 77 }}
         />
-      </Box>
+      </Box> */}
 
-      <Box
+      {/* <Box
         {...varRight}
         component={m.div}
         sx={{ position: 'absolute', left: 400, top: 320, zIndex: 8 }}
@@ -117,62 +117,17 @@ function ElearningHeroIllustration({ sx, ...other }: BoxProps) {
           src="/assets/icons/ic_money_flow.png"
           sx={{ width: 56, height: 56 }}
         />
-      </Box>
+      </Box> */}
 
-      <Box
-        {...varUp}
-        component={m.div}
-        sx={{ zIndex: 9, left: 120, bottom: 168, position: 'absolute' }}
-      >
-        <Label
-          text="Invest"
-          icon={
-            <Image
-              visibleByDefault
-              disabledEffect
-              alt="python"
-              src="/assets/icons/platforms/ic_platform_python.svg"
-              sx={{ width: 56, height: 56 }}
-            />
-          }
-          sx={{
-            py: 1.75,
-            typography: 'h3',
-            color: '#2994FF',
-            boxShadow: `0px 24px 48px rgba(0, 0, 0, 0.24), inset 0px -4px 10px ${alpha(
-              theme.palette.grey[600],
-              0.48
-            )}`,
-          }}
-        />
-      </Box>
 
       {/* Icon */}
 
-      <Box
-        {...varLeft}
-        component={m.div}
-        sx={{ top: 88, right: 72, zIndex: 8, position: 'absolute' }}
-      >
-        <Icon
-          color={GREEN}
-          content={<Typography sx={{ ...styleIconContent }}>R</Typography>}
-          sx={{ transform: 'scale(1.2) rotate(15deg)' }}
-        />
-      </Box>
+    
 
-      <Box {...varRight} component={m.div} sx={{ zIndex: 8, bottom: 160, position: 'absolute' }}>
-        <Icon
-          color={YELLOW}
-          content={<Typography sx={{ ...styleIconContent }}>C</Typography>}
-          sx={{ transform: 'translateX(40px) scale(1.2) rotate(-15deg)' }}
-        />
-      </Box>
-
-      <Box {...varUp} component={m.div} sx={{ zIndex: 8, right: 20, position: 'absolute' }}>
+      {/* <Box {...varUp} component={m.div} sx={{ zIndex: 8, right: 20, position: 'absolute' }}>
         <Icon
           color={PURPLE}
-          content={<Typography sx={{ ...styleIconContent, color: 'common.white' }}>S</Typography>}
+          content={<Typography sx={{ ...styleIconContent, color: 'common.white' }}></Typography>}
           sx={{ transform: 'scale(1.2) translateY(20px) rotate(15deg)' }}
         />
       </Box>
@@ -180,12 +135,12 @@ function ElearningHeroIllustration({ sx, ...other }: BoxProps) {
       <Box {...varDown} component={m.div} sx={{ zIndex: 8, position: 'absolute' }}>
         <Icon
           color={BLUE}
-          content={<Typography sx={{ ...styleIconContent, color: 'common.white' }}>A</Typography>}
+          content={<Typography sx={{ ...styleIconContent, color: 'common.white' }}></Typography>}
           sx={{
             transform: 'scale(1.2) translate(-135px, -75px) rotate(15deg)',
           }}
         />
-      </Box>
+      </Box> */}
 
       <Pattern01 sx={{ left: 0, top: 0 }} />
       <Pattern02 sx={{ top: 0, left: 0, opacity: 0.24, transform: 'scale(1.2)' }} />

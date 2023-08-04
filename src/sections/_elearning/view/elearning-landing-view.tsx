@@ -29,7 +29,7 @@ export default function ElearningLandingView() {
 
       <ElearningTeam members={_members.slice(0, 4)} />
 
-      <ElearningTestimonial testimonials={_testimonials} />
+      {/* <ElearningTestimonial testimonials={_testimonials} /> */}
 
       <ElearningLatestPosts posts={_coursePosts.slice(0, 4)} />
 

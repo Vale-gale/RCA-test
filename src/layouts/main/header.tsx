@@ -68,7 +68,9 @@ export default function Header({ headerOnDark }: Props) {
               <LongMenu />
             </Stack>
 
-            <Button variant="contained" color="inherit" href="/auth/register" target="_blank" rel="noopener">
+            <Button variant="contained" color="primary" 
+            style={{ fontSize: '15px' }}
+            href="/auth/register" target="_blank" rel="noopener">
               Registrarse
             </Button>
           </Stack>

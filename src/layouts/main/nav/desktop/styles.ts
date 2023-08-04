@@ -16,14 +16,14 @@ export const StyledNavItem = styled(ListItemButton, {
     content: '""',
     borderRadius: '50%',
     position: 'absolute',
-    width: 6,
-    height: 6,
+    width: 7,
+    height: 7,
     left: -12,
     backgroundColor: theme.palette.primary.main,
   };
 
   return {
-    ...theme.typography.body2,
+    ...theme.typography.h5,
     fontWeight: theme.typography.fontWeightMedium,
     padding: 0,
     height: '100%',

@@ -4,7 +4,7 @@ import { NavConfigProps } from './types';
 
 export const navVerticalConfig = (config?: NavConfigProps) => ({
   itemGap: config?.itemGap || 4,
-  iconSize: config?.iconSize || 24,
+  iconSize: config?.iconSize || 50,
   currentRole: config?.currentRole,
   itemRootHeight: config?.itemRootHeight || 44,
   itemSubHeight: config?.itemSubHeight || 36,

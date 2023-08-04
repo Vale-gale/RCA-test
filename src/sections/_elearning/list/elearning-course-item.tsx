@@ -24,6 +24,7 @@ type Props = {
 
 export default function ElearningCourseItem({ course, vertical }: Props) {
   const {
+    id,
     slug,
     level,
     price,
@@ -77,7 +78,7 @@ export default function ElearningCourseItem({ course, vertical }: Props) {
             textTransform: 'uppercase',
           }}
         >
-          Popular
+          Best Seller
         </Label>
       )}
 
@@ -111,7 +112,7 @@ export default function ElearningCourseItem({ course, vertical }: Props) {
           </Stack>
 
           <Stack spacing={1}>
-            <Link component={RouterLink} href={paths.course} color="inherit">
+            <Link component={RouterLink} href={`${paths.course}/${id}`} color="inherit">
               <TextMaxLine variant="h6" line={1}>
                 {slug}
               </TextMaxLine>
@@ -146,7 +147,7 @@ export default function ElearningCourseItem({ course, vertical }: Props) {
 
             {totalReviews && (
               <Link variant="body2" sx={{ color: 'text.secondary' }}>
-                ({fShortenNumber(totalReviews)} Reseñas totales)
+                ({fShortenNumber(totalReviews)} totalReviews)
               </Link>
             )}
           </Stack>
@@ -154,21 +155,24 @@ export default function ElearningCourseItem({ course, vertical }: Props) {
           <Stack direction="row" sx={{ typography: 'subtitle2' }}>
             {fShortenNumber(totalStudents)}
             <Box component="span" typography="body2" sx={{ ml: 0.5 }}>
-              estudiantes
+              students
             </Box>
           </Stack>
         </Stack>
+
         <Stack direction="row" alignItems="center">
-  <Avatar src={teachers[0]?.avatarUrl} />
+          <Avatar src={teachers[0]?.avatarUrl} />
 
-  <Typography variant="body2" sx={{ ml: 1, mr: 0.5 }}>
-    {teachers[0]?.name}
-  </Typography>
+          <Typography variant="body2" sx={{ ml: 1, mr: 0.5 }}>
+            {teachers[0]?.name}
+          </Typography>
 
-  <Typography variant="body2" color="text.secondary" component="span">
-    | <u>profesional en el área</u>
-  </Typography>
-</Stack>
+          {teachers?.length > 0 && (
+            <Link underline="always" color="text.secondary" variant="body2">
+              + {teachers?.length} teachers
+            </Link>
+          )}
+        </Stack>
 
         <Divider
           sx={{
@@ -187,7 +191,7 @@ export default function ElearningCourseItem({ course, vertical }: Props) {
           sx={{ color: 'text.disabled', '& > *:not(:last-child)': { mr: 2.5 } }}
         >
           <Stack direction="row" alignItems="center" sx={{ typography: 'body2' }}>
-            <Iconify icon="carbon:time" sx={{ mr: 1 }} /> {`${totalHours} horas`}
+            <Iconify icon="carbon:time" sx={{ mr: 1 }} /> {`${totalHours} hours`}
           </Stack>
 
           <Stack direction="row" alignItems="center" sx={{ typography: 'body2' }}>

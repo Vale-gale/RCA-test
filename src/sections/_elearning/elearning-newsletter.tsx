@@ -28,11 +28,10 @@ export default function ElearningNewsletter() {
           direction={{ xs: 'column-reverse', md: 'row' }}
         >
           <Grid xs={12} md={5} sx={{ textAlign: 'center', color: 'grey.800' }}>
-            <Typography variant="h3">Registrate ahora y ¡Obten el 20% de descuento en todos los cursos!</Typography>
+            <Typography variant="h3">¡Registrate ahora!</Typography>
 
             <Typography sx={{ mt: 2.5, mb: 5 }}>
-              Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed magna purus,
-              fermentum eu
+            Invirtiendo exitosamente en ETF
             </Typography>
 
             <InputBase

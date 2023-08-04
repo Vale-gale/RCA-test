@@ -18,6 +18,8 @@ import ElearningCourseList from '../list/elearning-course-list';
 
 // ----------------------------------------------------------------------
 
+console.log('hola', _courses)
+
 export default function ElearningCoursesView() {
   const mobileOpen = useBoolean();
 
@@ -53,7 +55,7 @@ export default function ElearningCoursesView() {
               display: { md: 'none' },
             }}
           >
-            Filters
+            Filtros
           </Button>
         </Stack>
 
