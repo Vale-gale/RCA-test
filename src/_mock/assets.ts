@@ -331,9 +331,9 @@ export const _companyNames = [
 
 export const _tags = [
   'Nuevo',
-  '',
+  'Otra categoria',
   'Finance',
-  '',
+  'otra',
   'Photography',
   'Art',
   'Fashion',

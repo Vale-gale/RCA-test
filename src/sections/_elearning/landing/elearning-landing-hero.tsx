@@ -7,6 +7,7 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { alpha, useTheme } from '@mui/material/styles';
 
+import Player from 'src/components/player';
 import { bgGradient } from 'src/theme/css';
 import Iconify from 'src/components/iconify';
 import { useBoolean } from 'src/hooks/use-boolean';
@@ -44,10 +45,10 @@ export default function ElearningLandingHero() {
       >
         <Container
           sx={{
-            py: 8,
+            py: 5,
             display: { md: 'flex' },
             alignItems: { md: 'center' },
-            height: { md: `70vh` },
+            height: { md: `120vh` },
           }}
         >
 
@@ -73,12 +74,37 @@ export default function ElearningLandingHero() {
                 </Typography>
                 {/* <ElearningHeroIllustration /> */}
 
+                <Typography
+      paddingX={15}
+      sx={{
+        color: 'text.secondary',
+        mt: 2,
+        mb: 5,
+        width: '100%', // Establece el ancho al 100%
+        maxWidth: '100%', // Establece el ancho máximo al 100%
+        '@media (max-width:600px)': {
+          // Aplica estos estilos solo cuando la pantalla sea pequeña
+          paddingX: 0, // Elimina el padding horizontal
+          textAlign: 'center', // Centra el texto
+        },
+      }}
+    >
+      Somos una empresa de Fintech que diseña, valida y aplica soluciones financieras para construir portafolios ganadores y estrategias rentables en los mercados financieros.
+    </Typography>
+                {/* <ReactPlayer url='https://www.youtube.com/watch?v=wWgIAphfn2U' /> */}
+<Box>
+<Player
+  controls
+  url="https://www.dropbox.com/s/odzycivuo9cy5rg/video_01.mp4?dl=0"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    maxWidth: "70%",
+    borderRadius: "10px",
+  }}
+/>
 
-
-                <Typography paddingX={15} sx={{ color: 'text.secondary', mt: 2, mb: 5 }}>
-                Somos una empresa de Fintech que diseña, valida y aplica soluciones financieras para construir portafolios ganadores y estrategias rentables en los mercados financieros.
-                </Typography>
-                Aquí va el video intro
+</Box>
                 <Stack
   direction="row"
   justifyContent="center" // Centrar horizontalmente en todos los dispositivos
@@ -128,13 +154,10 @@ Explorar cursos
                 </Stack>
               </Stack>
 
-
-
-
         </Container>
       </Box>
 
       {/* <PlayerDialog open={videoOpen.value} onClose={videoOpen.onFalse} videoPath={_mock.video(0)} /> */}
-    </>
+</>
   );
 }

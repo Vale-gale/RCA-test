@@ -70,7 +70,7 @@ export default function Header({ headerOnDark }: Props) {
 
             <Button variant="contained" color="primary" 
             style={{ fontSize: '15px' }}
-            href="/auth/register" target="_blank" rel="noopener">
+            href="/auth/registrar" target="_blank" rel="noopener">
               Registrarse
             </Button>
           </Stack>
