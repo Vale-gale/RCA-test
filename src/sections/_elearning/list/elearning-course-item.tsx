@@ -1,19 +1,19 @@
 import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
 import Link from '@mui/material/Link';
+import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 
-import Label from 'src/components/label';
 import { paths } from 'src/routes/paths';
+import Label from 'src/components/label';
 import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
 import { ICourseProps } from 'src/types/course';
 import { RouterLink } from 'src/routes/components';
+import { fCurrency } from 'src/utils/format-number';
 import TextMaxLine from 'src/components/text-max-line';
-import { fCurrency, fShortenNumber } from 'src/utils/format-number';
 
 // ----------------------------------------------------------------------
 

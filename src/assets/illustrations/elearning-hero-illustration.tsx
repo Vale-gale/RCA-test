@@ -1,17 +1,13 @@
 import { memo } from 'react';
-import { m } from 'framer-motion';
 
+import { useTheme } from '@mui/material/styles';
 import Box, { BoxProps } from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import { alpha, useTheme } from '@mui/material/styles';
 
 import Image from 'src/components/image';
 
-import Icon from './pattern/icon';
 import Shape from './pattern/shape';
-import Label from './pattern/label';
-import Pattern02 from './pattern/pattern-02';
 import Pattern01 from './pattern/pattern-01';
+import Pattern02 from './pattern/pattern-02';
 
 // ----------------------------------------------------------------------
 

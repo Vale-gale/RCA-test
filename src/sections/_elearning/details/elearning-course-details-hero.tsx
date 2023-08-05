@@ -1,6 +1,5 @@
 import Fab from '@mui/material/Fab';
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import Divider from '@mui/material/Divider';
@@ -17,7 +16,6 @@ import Iconify from 'src/components/iconify';
 import { ICourseProps } from 'src/types/course';
 import { useBoolean } from 'src/hooks/use-boolean';
 import { PlayerDialog } from 'src/components/player';
-import { fShortenNumber } from 'src/utils/format-number';
 import { useResponsive } from 'src/hooks/use-responsive';
 import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 

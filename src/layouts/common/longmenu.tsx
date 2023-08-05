@@ -1,18 +1,16 @@
+import Link from 'next/link';
 import * as React from 'react';
 
 import Menu from '@mui/material/Menu';
+import Divider from '@mui/material/Divider';
 import { Login } from '@mui/icons-material';
 import Tooltip from '@mui/material/Tooltip';
-import Divider from '@mui/material/Divider';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import Settings from '@mui/icons-material/Settings';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import router, { useRouter } from 'next/router';
 
 import Iconify from 'src/components/iconify';
-import Link from 'next/link';
-
 
 export default function AccountMenu() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);

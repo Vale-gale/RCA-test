@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Drawer from '@mui/material/Drawer';
@@ -11,7 +13,6 @@ import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
 import Scrollbar from 'src/components/scrollbar';
 import { useResponsive } from 'src/hooks/use-responsive';
-import Link from 'next/link';
 
 // ----------------------------------------------------------------------
 
@@ -105,17 +106,17 @@ export default function SupportNav({ topic, data, onChangeTopic, open, onClose }
             <Iconify icon="carbon:email" width={24} />
             <Typography variant="subtitle2">Email</Typography>
           </StyledButton> */}
-          <Link href={'/contacto'} style={{ textDecoration: 'none', color:'inherit' }}>
+          <Link href="/contacto" style={{ textDecoration: 'none', color:'inherit' }}>
           <StyledButton >
             <Iconify icon="carbon:email" width={24}  />
             <Typography variant="subtitle2">Email</Typography>
           </StyledButton>
           </Link>
-          <Link href={'/contacto'} style={{ textDecoration: 'none', color:'inherit' }}>
+          <Link href="/contacto" style={{ textDecoration: 'none', color:'inherit' }}>
           <StyledButton>
             <Iconify icon="carbon:chat" width={38} />
             <Typography variant="subtitle2">
-              {`Número de contacto `}
+              Número de contacto
               <Box component="span" sx={{ color: 'primary.main' }}>
               (+57) 3143172966
               </Box>

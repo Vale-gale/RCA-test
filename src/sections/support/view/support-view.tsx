@@ -7,10 +7,9 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 
-import { _faqsPagos } from 'src/_mock';
-import { _faqsCuenta } from 'src/_mock';
 import Iconify from 'src/components/iconify';
 import { useBoolean } from 'src/hooks/use-boolean';
+import { _faqsPagos, _faqsCuenta } from 'src/_mock';
 
 import SupportNav from '../support-nav';
 import SupportHero from '../support-hero';

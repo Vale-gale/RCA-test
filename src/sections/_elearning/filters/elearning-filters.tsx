@@ -12,10 +12,6 @@ import { ICountriesProps } from 'src/types/contact';
 import { ICourseFiltersProps } from 'src/types/course';
 import { useResponsive } from 'src/hooks/use-responsive';
 
-import FilterFee from './filter-fee';
-import FilterLevel from './filter-level';
-import FilterRating from './filter-rating';
-import FilterDuration from './filter-duration';
 import FilterCategories from './filter-categories';
 
 // ----------------------------------------------------------------------

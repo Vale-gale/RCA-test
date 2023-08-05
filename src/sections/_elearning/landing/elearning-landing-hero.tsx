@@ -1,23 +1,17 @@
-import Link from 'next/link';
 
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import { alpha, useTheme } from '@mui/material/styles';
 
-import { _mock } from 'src/_mock';
 import { bgGradient } from 'src/theme/css';
 import Iconify from 'src/components/iconify';
 import { useBoolean } from 'src/hooks/use-boolean';
-import { PlayerDialog } from 'src/components/player';
 import { fShortenNumber } from 'src/utils/format-number';
 import { useResponsive } from 'src/hooks/use-responsive';
-import ElearningHeroIllustration from 'src/assets/illustrations/elearning-hero-illustration';
 
 // ----------------------------------------------------------------------
 
