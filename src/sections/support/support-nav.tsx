@@ -11,6 +11,7 @@ import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
 import Scrollbar from 'src/components/scrollbar';
 import { useResponsive } from 'src/hooks/use-responsive';
+import Link from 'next/link';
 
 // ----------------------------------------------------------------------
 
@@ -92,7 +93,7 @@ export default function SupportNav({ topic, data, onChangeTopic, open, onClose }
         }}
       >
         <Typography variant="h4" paragraph>
-         Aún necesitas ayuda?
+         ¿Aún necesitas ayuda?
         </Typography>
 
         <Typography variant="body2" sx={{ color: 'text.secondary', mb: 4 }}>
@@ -100,25 +101,27 @@ export default function SupportNav({ topic, data, onChangeTopic, open, onClose }
         </Typography>
 
         <Stack spacing={2}>
-          <StyledButton>
+          {/* <StyledButton>
             <Iconify icon="carbon:email" width={24} />
             <Typography variant="subtitle2">Email</Typography>
+          </StyledButton> */}
+          <Link href={'/contacto'} style={{ textDecoration: 'none', color:'inherit' }}>
+          <StyledButton >
+            <Iconify icon="carbon:email" width={24}  />
+            <Typography variant="subtitle2">Email</Typography>
           </StyledButton>
-
+          </Link>
+          <Link href={'/contacto'} style={{ textDecoration: 'none', color:'inherit' }}>
           <StyledButton>
-            <Iconify icon="carbon:chat" width={24} />
-            <Typography variant="subtitle2">Chater ahora</Typography>
-          </StyledButton>
-
-          <StyledButton>
-            <Iconify icon="carbon:mobile" width={24} />
+            <Iconify icon="carbon:chat" width={38} />
             <Typography variant="subtitle2">
-              {`Llamar `}
+              {`Número de contacto `}
               <Box component="span" sx={{ color: 'primary.main' }}>
-                552-917-1454
+              (+57) 3143172966
               </Box>
             </Typography>
           </StyledButton>
+          </Link>
         </Stack>
       </Box>
     </Scrollbar>

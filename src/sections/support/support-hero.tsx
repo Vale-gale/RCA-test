@@ -20,19 +20,19 @@ export default function SupportHero() {
           color: alpha(theme.palette.grey[900], 0.8),
           imgUrl: '/assets/background/overlay_2.jpg',
         }),
-        py: 15,
+        py: 10,
         px: 2.5,
         alignItems: 'center',
       }}
     >
-      <Typography variant="h2" sx={{ textAlign: 'center', color: 'common.white', mb: 5 }}>
-        Bienvenido a <br />
-        <Box component="span" sx={{ color: 'primary.main' }}>
-          {`RCA `}
+      <Typography variant="h1" sx={{ textAlign: 'center', color: 'primary.main', mb: 5 }}>
+        Bienvenido a  
+        <Box component="span" sx={{ color: 'common.white' }}>
+          {` RCA Capital `}
         </Box>
-        Soporte
+        soporte
       </Typography>
-
+{/* 
       <TextField
         fullWidth
         hiddenLabel
@@ -46,7 +46,7 @@ export default function SupportHero() {
           sx: { color: 'common.white' },
         }}
         sx={{ maxWidth: 366 }}
-      />
+      /> */}
     </Stack>
   );
 }

@@ -16,6 +16,7 @@ import FilterFee from './filter-fee';
 import FilterLevel from './filter-level';
 import FilterRating from './filter-rating';
 import FilterDuration from './filter-duration';
+import FilterCategories from './filter-categories';
 
 // ----------------------------------------------------------------------
 
@@ -128,24 +129,28 @@ export default function ElearningFilters({ open, onClose }: Props) {
         }}
       />
 
-      <Block title="Calificaciones">
+      {/* <Block title="Calificaciones">
         <FilterRating filterRating={filters.filterRating} onChangeRating={handleChangeRating} />
+      </Block> */}
+
+      <Block title="Temáticas">
+        <FilterCategories filterCategories={filters.filterCategories} onChangeCategory={handleChangeCategory} />
       </Block>
 
-      <Block title="Nivel">
+      {/* <Block title="Nivel">
         <FilterLevel filterLevel={filters.filterLevel} onChangeLevel={handleChangeLevel} />
-      </Block>
+      </Block> */}
       
-      <Block title="Duración">
+      {/* <Block title="Duración">
         <FilterDuration
           filterDuration={filters.filterDuration}
           onChangeDuration={handleChangeDuration}
         />
-      </Block>
-
+      </Block> */}
+{/* 
       <Block title="Tarifa">
         <FilterFee filterFee={filters.filterFee} onChangeFee={handleChangeFee} />
-      </Block>
+      </Block> */}
 
     </Stack>
   );

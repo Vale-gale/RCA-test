@@ -35,12 +35,12 @@ export default function PaymentView() {
       sx={{
         overflow: 'hidden',
         minHeight: 1,
-        pt: { xs: 13, md: 16 },
+        pt: { xs: 12, md: 9 },
         pb: { xs: 10, md: 15 },
       }}
     >
       <Typography variant="h3" align="center" paragraph>
-        ¡Terminemos de potenciarte al máximo!
+      A sólo un paso del éxito!
       </Typography>
 
       <Typography align="center" sx={{ color: 'text.secondary', mb: { xs: 5, md: 8 } }}>

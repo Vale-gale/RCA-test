@@ -40,7 +40,7 @@ export default function FilterCategories({ filterCategories, onChangeCategory }:
         <TextField
           {...params}
           hiddenLabel={!filterCategories.length}
-          placeholder="All Categories"
+          placeholder="Todos los temas"
           InputProps={{
             ...params.InputProps,
             autoComplete: 'search',

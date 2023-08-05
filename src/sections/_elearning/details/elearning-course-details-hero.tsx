@@ -125,7 +125,7 @@ export default function ElearningCourseDetailsHero({ course }: Props) {
 
                   <Typography sx={{ color: 'text.secondary' }}>{description}</Typography>
                 </Stack>
-
+{/* 
                 <Stack
                   spacing={1.5}
                   direction="row"
@@ -151,10 +151,9 @@ export default function ElearningCourseDetailsHero({ course }: Props) {
                       estudiantes
                     </Box>
                   </Stack>
-                </Stack>
+                </Stack> */}
 
                 <Stack direction="row" alignItems="center">
-                  <Avatar src={teachers[0]?.avatarUrl} />
 
                   <Stack direction="row" alignItems="center">
   <Avatar src={teachers[0]?.avatarUrl} />
@@ -162,10 +161,10 @@ export default function ElearningCourseDetailsHero({ course }: Props) {
   <Typography variant="body2" sx={{ ml: 1, mr: 0.5 }}>
     {teachers[0]?.name}
   </Typography>
-
+{/* 
   <Typography variant="body2" color="text.secondary" component="span">
     | <u>profesional en el área</u>
-  </Typography>
+  </Typography> */}
 </Stack>
                 </Stack>
 
@@ -187,7 +186,7 @@ export default function ElearningCourseDetailsHero({ course }: Props) {
                       <Iconify icon="carbon:document" sx={{ mr: 1 }} />
                       {`${lessons?.length} Lecciones`}
                     </Stack>
-
+{/* 
                     <Stack direction="row" alignItems="center" sx={{ typography: 'body2' }}>
                       <Iconify
                         icon={
@@ -198,7 +197,7 @@ export default function ElearningCourseDetailsHero({ course }: Props) {
                         sx={{ mr: 1 }}
                       />
                       {level}
-                    </Stack>
+                    </Stack> */}
                   </Stack>
 
                   <Stack

@@ -101,7 +101,7 @@ export const _brandsColor = BRANDS_NAME.map((brand, index) => ({
 
 // ----------------------------------------------------------------------
 
-export const _faqs = [
+export const _faqsCuenta = [
   'Sed augue ipsum, egestas nec, vestibulum et',
   'alesuada adipiscing, dui vestibulum suscipit nulla quis orci.',
   'Ut varius tincidunt libero',
@@ -114,7 +114,7 @@ export const _faqs = [
     'Amazing experience i love it a lot. Thanks to the team that dreams come true, great! I appreciate there attitude and approach.',
 }));
 
-export const _faqsSupport = [
+export const _faqsPagos = [
   `[Covid] Seasonal Shopping Guide`,
   'I Want To Check Where My Order Is Delivered',
   '[Shipping Information] How To Contact The Shipping Unit/Look Up Shipping Information/Delivery Exchange?',

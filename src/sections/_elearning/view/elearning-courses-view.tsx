@@ -18,7 +18,7 @@ import ElearningCourseList from '../list/elearning-course-list';
 
 // ----------------------------------------------------------------------
 
-console.log('hola', _courses)
+// console.log('hola', _courses)
 
 export default function ElearningCoursesView() {
   const mobileOpen = useBoolean();

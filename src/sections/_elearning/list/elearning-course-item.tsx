@@ -78,7 +78,7 @@ export default function ElearningCourseItem({ course, vertical }: Props) {
             textTransform: 'uppercase',
           }}
         >
-          Best Seller
+          Mejor vendido
         </Label>
       )}
 
@@ -132,7 +132,7 @@ export default function ElearningCourseItem({ course, vertical }: Props) {
           </Stack>
         </Stack>
 
-        <Stack
+        {/* <Stack
           spacing={1.5}
           direction="row"
           alignItems="center"
@@ -158,7 +158,7 @@ export default function ElearningCourseItem({ course, vertical }: Props) {
               students
             </Box>
           </Stack>
-        </Stack>
+        </Stack> */}
 
         <Stack direction="row" alignItems="center">
           <Avatar src={teachers[0]?.avatarUrl} />
@@ -167,11 +167,11 @@ export default function ElearningCourseItem({ course, vertical }: Props) {
             {teachers[0]?.name}
           </Typography>
 
-          {teachers?.length > 0 && (
+          {/* {teachers?.length > 0 && (
             <Link underline="always" color="text.secondary" variant="body2">
               + {teachers?.length} teachers
             </Link>
-          )}
+          )} */}
         </Stack>
 
         <Divider
@@ -193,8 +193,11 @@ export default function ElearningCourseItem({ course, vertical }: Props) {
           <Stack direction="row" alignItems="center" sx={{ typography: 'body2' }}>
             <Iconify icon="carbon:time" sx={{ mr: 1 }} /> {`${totalHours} hours`}
           </Stack>
+          {/* <Stack direction="row" alignItems="center" sx={{ typography: 'body2' }}>
+                      <Iconify icon="carbon:help" sx={{ mr: 1 }} /> {`${totalQuizzes} Quizzes`}
+          </Stack> */}
 
-          <Stack direction="row" alignItems="center" sx={{ typography: 'body2' }}>
+          {/* <Stack direction="row" alignItems="center" sx={{ typography: 'body2' }}>
             <Iconify
               icon={
                 (level === 'Beginner' && 'carbon:skill-level-basic') ||
@@ -204,7 +207,7 @@ export default function ElearningCourseItem({ course, vertical }: Props) {
               sx={{ mr: 1 }}
             />
             {level}
-          </Stack>
+          </Stack> */}
         </Stack>
       </Stack>
     </Card>

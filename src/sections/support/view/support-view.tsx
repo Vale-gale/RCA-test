@@ -7,7 +7,8 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 
-import { _faqsSupport } from 'src/_mock';
+import { _faqsPagos } from 'src/_mock';
+import { _faqsCuenta } from 'src/_mock';
 import Iconify from 'src/components/iconify';
 import { useBoolean } from 'src/hooks/use-boolean';
 
@@ -21,34 +22,34 @@ const TOPICS = [
   {
     title: 'Cuenta',
     icon: '/assets/icons/faq/ic_faq_account.svg',
-    content: <SupportContent contents={_faqsSupport} />,
+    content: <SupportContent contents={_faqsCuenta} />,
   },
   {
     title: 'Pagos',
     icon: '/assets/icons/faq/ic_faq_payment.svg',
-    content: <SupportContent contents={_faqsSupport} />,
+    content: <SupportContent contents={_faqsPagos} />,
   },
-  {
-    title: 'Entrega',
-    icon: '/assets/icons/faq/ic_faq_delivery.svg',
-    content: <SupportContent contents={_faqsSupport} />,
-  },
-  {
-    title: 'Producto',
-    icon: '/assets/icons/faq/ic_faq_package.svg',
-    content: <SupportContent contents={_faqsSupport} />,
-  },
-  {
-    title: 'Devolver & Reembolso',
-    icon: '/assets/icons/faq/ic_faq_refund.svg',
-    content: <SupportContent contents={_faqsSupport} />,
-  },
-  {
-    title: 'Garantías',
-    icon: '/assets/icons/faq/ic_faq_assurances.svg',
-    content: <SupportContent contents={_faqsSupport} />,
-  },
-];
+//   {
+//     title: 'Entrega',
+//     icon: '/assets/icons/faq/ic_faq_delivery.svg',
+//     content: <SupportContent contents={_faqsSupport} />,
+//   },
+//   {
+//     title: 'Producto',
+//     icon: '/assets/icons/faq/ic_faq_package.svg',
+//     content: <SupportContent contents={_faqsSupport} />,
+//   },
+//   {
+//     title: 'Devolver & Reembolso',
+//     icon: '/assets/icons/faq/ic_faq_refund.svg',
+//     content: <SupportContent contents={_faqsSupport} />,
+//   },
+//   {
+//     title: 'Garantías',
+//     icon: '/assets/icons/faq/ic_faq_assurances.svg',
+//     content: <SupportContent contents={_faqsSupport} />,
+//   },
+ ];
 
 // ----------------------------------------------------------------------
 

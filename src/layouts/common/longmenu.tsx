@@ -8,8 +8,10 @@ import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import Settings from '@mui/icons-material/Settings';
 import ListItemIcon from '@mui/material/ListItemIcon';
+import router, { useRouter } from 'next/router';
 
 import Iconify from 'src/components/iconify';
+import Link from 'next/link';
 
 
 export default function AccountMenu() {
@@ -79,12 +81,14 @@ export default function AccountMenu() {
           Iniciar Sesión
         </MenuItem>
         <Divider />
-        <MenuItem onClick={handleClose} style={{ fontSize: '15px' }}>
+        <Link href="/soporte" style={{ textDecoration: 'none', color:'inherit' }}>
+    <MenuItem onClick={handleClose} style={{ fontSize: '15px' }}> 
+      
           <ListItemIcon>
             <Settings fontSize="medium" />
           </ListItemIcon>
          Soporte
-        </MenuItem>
+        </MenuItem></Link>
         {/* <MenuItem onClick={handleClose}>
           <ListItemIcon>
             <Logout fontSize="small" />

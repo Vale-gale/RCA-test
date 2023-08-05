@@ -53,50 +53,57 @@ export default function ElearningLandingHero() {
             py: 8,
             display: { md: 'flex' },
             alignItems: { md: 'center' },
-            height: { md: `75vh` },
+            height: { md: `70vh` },
           }}
         >
 
             <Stack
   sx={{
     textAlign: 'center', // Centrar el texto en dispositivos pequeños y medianos
-    [theme.breakpoints.up('md')]: {
-      textAlign: 'center', // Restaurar la alineación normal en dispositivos grandes
-    },
-    paddingTop: 7,
+    // [theme.breakpoints.up('md')]: {
+    //   textAlign: 'center', // Restaurar la alineación normal en dispositivos grandes
+    // },
+    paddingTop: 5,
   }}
 >
-                <Typography variant="h2">
+                <Typography variant="h1">
                   
-                   <Box component="span" sx={{ color: 'primary.main' }}>
+                   <Box component="span" sx={{ textDecoration: ' underline dotted grey' }}>
                     {` Tecnología `}
                   </Box>
                   que
-                  <Box component="span" sx={{ textDecoration: ' underline dotted grey' }}>
-                    {` genera riqueza`}
+                  <Box component="span" sx={{ color: 'primary.main' }}>
+                    {` genera `}
                   </Box>
+                  riqueza
                 </Typography>
                 {/* <ElearningHeroIllustration /> */}
 
 
 
-                <Typography sx={{ color: 'text.secondary', mt: 3, mb: 5 }}>
+                <Typography paddingX={15} sx={{ color: 'text.secondary', mt: 2, mb: 5 }}>
                 Somos una empresa de Fintech que diseña, valida y aplica soluciones financieras para construir portafolios ganadores y estrategias rentables en los mercados financieros.
                 </Typography>
+                Aquí va el video intro
                 <Stack
   direction="row"
   justifyContent="center" // Centrar horizontalmente en todos los dispositivos
   alignItems="center"
-  sx={{ typography: 'h6', mt: 2 }} // Añadir margen superior para separar del subtítulo
+  sx={{ typography: 'h5', mt: 2 }} // Añadir margen superior para separar del subtítulo
 >
-  <Fab size="medium" color="info" onClick={videoOpen.onTrue} sx={{ mr: 1 }}>
-    <Iconify width={24} icon="carbon:play" />
+<Fab size="medium" color="info" href='/cursos' onClick={videoOpen.onTrue} sx={{ mr: 1 }}>
+    <Iconify width={25} icon="fluent-mdl2:learning-tools" />
   </Fab>
-  Video explicación
+Explorar cursos
+
+  {/* <Fab size="medium" color="info" onClick={videoOpen.onTrue} sx={{ mr: 1 }}>
+    <Iconify width={25} icon="fluent-mdl2:learning-tools" />
+  </Fab>
+  Explorar cursos */}
 </Stack>
 
 
-                <Divider sx={{ borderStyle: 'dashed', mt: 8, mb: 6 }} />
+                <Divider sx={{ borderStyle: 'dashed', mt: 5, mb: 6 }} />
 
                 <Stack
       direction="row"
@@ -133,7 +140,7 @@ export default function ElearningLandingHero() {
         </Container>
       </Box>
 
-      <PlayerDialog open={videoOpen.value} onClose={videoOpen.onFalse} videoPath={_mock.video(0)} />
+      {/* <PlayerDialog open={videoOpen.value} onClose={videoOpen.onFalse} videoPath={_mock.video(0)} /> */}
     </>
   );
 }

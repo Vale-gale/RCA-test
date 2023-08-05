@@ -51,7 +51,7 @@ export default function ElearningCourseDetailsSummary({ course }: Props) {
   
 
       <Stack spacing={2}>
-        <Typography variant="h4">Overview</Typography>
+        <Typography variant="h4">Descripción</Typography>
 
         <Typography>
           Consentaneum aeternitate dignitati commoventur primisque cupit mea officia peccata parens
