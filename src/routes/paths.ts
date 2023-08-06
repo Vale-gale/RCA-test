@@ -21,7 +21,7 @@ export const paths = {
   support: '/soporte',
   page404: '/error/404',
   page500: '/error/500',
-  //Player
+  // Player
   player: '/player',
   miscursos: '/miscursos'
 };
