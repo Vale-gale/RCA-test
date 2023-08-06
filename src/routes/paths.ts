@@ -13,7 +13,7 @@ export const paths = {
   registerBackground: '/auth/registrar',
   forgotPassword: '/auth/forgot-password',
   verify: '/auth/verificar',
-  // Common
+  // Otras
   maintenance: '/mantenimiento',
   comingsoon: '/coming-soon',
   pricing01: '/pricing-01',
@@ -22,4 +22,7 @@ export const paths = {
   support: '/soporte',
   page404: '/error/404',
   page500: '/error/500',
+  //Player
+  player: '/player',
+  miscursos: '/miscursos'
 };

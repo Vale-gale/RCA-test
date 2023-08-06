@@ -17,7 +17,7 @@ const TEACHERS = [...Array(5)].map((_, index) => ({
 const LESSONS = [...Array(9)].map((_, index) => ({
   id: _mock.id(index),
   duration: 60 - index,
-  title: `Lecciones ${index + 1}`,
+  title: `Lección ${index + 1}`,
   videoPath: _mock.video(index),
   description: _mock.sentence(index),
   unLocked: [0, 1, 2].includes(index),

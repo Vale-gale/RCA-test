@@ -11,8 +11,8 @@ import Player from 'src/components/player';
 import { bgGradient } from 'src/theme/css';
 import Iconify from 'src/components/iconify';
 import { useBoolean } from 'src/hooks/use-boolean';
-import { fShortenNumber } from 'src/utils/format-number';
 import { useResponsive } from 'src/hooks/use-responsive';
+import { fShortenNumber } from 'src/utils/format-number';
 
 // ----------------------------------------------------------------------
 
@@ -91,8 +91,8 @@ export default function ElearningLandingHero() {
     >
       Somos una empresa de Fintech que diseña, valida y aplica soluciones financieras para construir portafolios ganadores y estrategias rentables en los mercados financieros.
     </Typography>
-                {/* <ReactPlayer url='https://www.youtube.com/watch?v=wWgIAphfn2U' /> */}
-<Box>
+ 
+{/* <Box>
 <Player
   controls
   url="https://www.dropbox.com/s/odzycivuo9cy5rg/video_01.mp4?dl=0"
@@ -104,7 +104,20 @@ export default function ElearningLandingHero() {
   }}
 />
 
-</Box>
+</Box> */}
+
+
+<Player
+  controls
+  url="https://www.dropbox.com/s/odzycivuo9cy5rg/video_01.mp4?dl=0"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    maxWidth: "70%",
+    borderRadius: "10px",
+  }}
+/>
+
                 <Stack
   direction="row"
   justifyContent="center" // Centrar horizontalmente en todos los dispositivos
