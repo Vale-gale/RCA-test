@@ -210,9 +210,9 @@ export default function ElearningCourseDetailsHero({ course }: Props) {
                       {typeof languages === 'string' ? languages : languages?.join(', ')}
                     </Stack>
 
-                    <Stack direction="row" alignItems="center" sx={{ typography: 'body2' }}>
+                    {/* <Stack direction="row" alignItems="center" sx={{ typography: 'body2' }}>
                       <Iconify icon="carbon:help" sx={{ mr: 1 }} /> {`${totalQuizzes} Quizzes`}
-                    </Stack>
+                    </Stack> */}
                   </Stack>
                 </Stack>
               </Stack>

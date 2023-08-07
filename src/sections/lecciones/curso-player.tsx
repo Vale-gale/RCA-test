@@ -29,7 +29,7 @@ export default function CursoPlayer({ course }: Props) {
 <Box>
       <Player
   controls
-  url="https://www.dropbox.com/s/7cx04n8rr4w5rbg/video_02.mp4?dl=0"
+  url="https://www.dropbox.com/scl/fi/o7egkaha79zzrkfc9om7e/cursotradingvideo1.mp4?rlkey=aynd9xzxa6oxlz177bb3ngakf&dl=0"
   style={{
     display: "block",
     margin: "0 auto",

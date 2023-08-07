@@ -45,14 +45,14 @@ export default function ElearningCourseDetailsInfo({ course }: Props) {
             </Box>
             Lecciones
           </Stack>
-
+{/* 
           <Stack direction="row" alignItems="center" sx={{ typography: 'body2' }}>
             <Iconify icon="carbon:document-download" sx={{ mr: 1 }} />
             <Box component="strong" sx={{ mr: 0.5 }}>
               {course.resources}
             </Box>
             Recursos descargables
-          </Stack>
+          </Stack> */}
 
           <Stack direction="row" alignItems="center" sx={{ typography: 'body2' }}>
             <Iconify icon="carbon:data-accessor" sx={{ mr: 1 }} />
